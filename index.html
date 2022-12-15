@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bytescrum</title>
+	<script async src="https://cse.google.com/cse.js?cx=015385250820006423568:r5wqrdwjxfu"></script>
+	<style>
+		.gsc-search-box{
+			display: none;
+		}
+	</style>
+	<script>
+	window.onload = function () {
+    document.getElementById("custom_search_form").onsubmit = function onSubmit(e) {
+		//let parentForm = document.querySelector("form.gsc-search-box");
+		let searchText = e.currentTarget.getElementsByTagName('input')[0].value;
+		document.location.search = 'search=' + searchText;
+		e.preventDefault();
+    }
+}
+	</script>
+</script>
+  </head>
+  <body>
+	<div class="search-container">
+	<form id="custom_search_form">
+		<input type="text">
+		<button type="submit">Search</button>
+	</form>
+	</div>
+    <div class="gcse-search" data-autoSearchOnLoad='true' data-queryParameterName="search"></div>
+  </body>
+</html>
